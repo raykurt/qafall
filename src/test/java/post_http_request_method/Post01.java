@@ -71,7 +71,6 @@ public class Post01 extends HerokuAppBaseUrl {
 
        System.out.println(((Map)actualData.get("booking")).get("firstname"));
 
-
    }
 
 
