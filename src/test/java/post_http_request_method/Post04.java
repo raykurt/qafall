@@ -24,9 +24,12 @@ public class Post04 extends MedunnaBaseUrl {
 
         Registrant registrant = new Registrant();
 
-        registrant.setFirstName(faker.name().firstName());
-        registrant.setLastName(faker.name().lastName());
-        registrant.setEmail(faker.internet().emailAddress());
+//        registrant.setFirstName(faker.name().firstName());
+        registrant.setFirstName("xRECEPx");
+//        registrant.setLastName(faker.name().lastName());
+        registrant.setLastName("xRECEP1x");
+//        registrant.setEmail(faker.internet().emailAddress());
+        registrant.setEmail("rreecceepp@gm.com");
         registrant.setLangKey("tr");
         registrant.setLogin(registrant.getFirstName()+"1");
         registrant.setPassword(faker.internet().password(8,20,true,true));
@@ -37,7 +40,7 @@ public class Post04 extends MedunnaBaseUrl {
 
         response.then().statusCode(201);
 
-        String fileName = "C:/Users/rayku/IdeaProjects/qafallapi2022/src/test/java/test_data/medunna_registrant_info.txt";
+        String fileName = "src/test/java/test_data/medunna_registrant_info.txt";
 
         generateData(registrant,fileName);
 
